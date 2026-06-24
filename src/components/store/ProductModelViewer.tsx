@@ -36,6 +36,7 @@ export function ProductModelViewer({ src, poster, alt }: { src: string; poster: 
       shadow-intensity="1"
       exposure="1"
       environment-image="neutral"
+      style={{ width: "100%", height: "100%", background: "transparent" }}
     />
   );
 }
