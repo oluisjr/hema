@@ -1,10 +1,9 @@
 /* ── TYPOGRAPHY SYSTEM ─────────────────────────────────────
-   Black Ops One  → Hero titles / big statements (bold, military)
-   Barlow Condensed → Navbar / labels / eyebrows (compact, athletic)
-   Oswald          → Card headings / prices / section labels
-   DM Sans         → Body copy / UI text (clean, readable mobile)
+   Rubik Dirt       → ALL headings / titles (chunky, graffiti, street)
+   Barlow Condensed → Navbar / labels / eyebrows / CTAs
+   DM Sans          → Body copy / UI text (clean, readable on mobile)
 ──────────────────────────────────────────────────────────── */
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Barlow+Condensed:wght@400;600;700;900&family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Barlow+Condensed:wght@400;600;700;900&family=DM+Sans:wght@400;500;600;700&display=swap");
 
 :root {
   --ink: #0a0a0c;
@@ -405,7 +404,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   display: block;
 }
 .inst-page h1 {
-  font-family: "Black Ops One", Impact, sans-serif;
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-size: clamp(48px, 7vw, 100px);
   line-height: .88;
   text-transform: uppercase;
@@ -416,10 +415,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .inst-page h1 span { color: var(--gold-2) }
 .inst-page h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Rubik Dirt", sans-serif;
   font-size: 26px;
-  font-weight: 600;
-  letter-spacing: .08em;
+  font-weight: 400;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: var(--gold-2);
   margin: 40px 0 12px;
@@ -458,10 +457,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin-bottom: 12px;
 }
 .inst-card h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: .06em;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .02em;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 8px;
@@ -477,10 +476,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 22px 0;
 }
 .faq-item summary {
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: .05em;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .02em;
   text-transform: uppercase;
   cursor: pointer;
   color: #fff;
@@ -510,10 +509,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .contact-card-icon { font-size: 36px }
 .contact-card h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: .06em;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .02em;
   text-transform: uppercase;
   color: var(--gold-2);
   margin: 0;
@@ -574,10 +573,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   line-height: 1;
 }
 .inst-card h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: .06em;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .02em;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 8px;
@@ -599,7 +598,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin: 40px 0;
 }
 .inst-highlight blockquote {
-  font-family: "Black Ops One", Impact, sans-serif;
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-size: clamp(20px, 3.5vw, 28px);
   letter-spacing: .01em;
   text-transform: uppercase;
@@ -641,7 +640,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .inst-step:last-child { border-bottom: none }
 .inst-step-num {
-  font-family: "Black Ops One", Impact, sans-serif;
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-size: 34px;
   color: var(--gold-2);
   line-height: 1;
@@ -654,10 +653,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 4px 0;
 }
 .inst-step h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: .06em;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .02em;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 6px;
@@ -776,10 +775,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   background: rgba(37,211,102,.04);
 }
 .contato-card h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: .06em;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .02em;
   text-transform: uppercase;
   color: #fff;
   margin: 0;
@@ -846,20 +845,20 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin-bottom: 6px;
 }
 
-/* BLACK OPS TITLE TREATMENT */
+/* RUBIK DIRT — unified title treatment for ALL headings */
 .hero-copy h1,
 .catalog-copy h1,
 .product-buy-panel h1,
 .product-edit-header h1,
 .dashboard-header h1 {
   margin: 10px 0 16px;
-  font-family: "Black Ops One", Impact, sans-serif;
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 0.85;
   color: #fff;
-  text-shadow: 4px 4px 0 rgba(0,0,0,1);
+  text-shadow: 3px 3px 0 rgba(0,0,0,.8);
 }
 
 .hero-copy h1 { font-size: clamp(72px, 8.5vw, 148px); max-width: 740px }
@@ -1014,7 +1013,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   bottom: 18%;
   z-index: 3;
   color: var(--gold-2);
-  font-family: "Permanent Marker", "Bebas Neue", Impact, sans-serif;
+  font-family: "Rubik Dirt", Impact, sans-serif;
   text-transform: uppercase;
   font-size: 62px;
   line-height: .8;
@@ -1085,7 +1084,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 
 .weekly-title h2, .section-title-row h2 {
-  font-family: "Rubik Dirt", "Bangers", Impact, sans-serif;
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-weight: 400;
   font-size: 58px;
   line-height: .88;
@@ -1271,7 +1270,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   letter-spacing: .14em;
 }
 .immersive-banner h2 {
-  font-family: "Anton";
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   margin: 4px 0 0;
@@ -1376,7 +1375,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   z-index: 5;
   background: var(--gold-2);
   color: #000;
-  font-family: "Bebas Neue";
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-size: 28px;
   text-transform: uppercase;
   padding: 10px 18px;
@@ -1470,7 +1469,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .detail-benefits article:last-child { border-right: 0 }
 .detail-benefits svg { color: var(--gold-2); flex: 0 0 auto }
-.detail-benefits h3 { font-family: "Anton"; font-size: 24px; text-transform: uppercase; margin: 0; color: #fff }
+.detail-benefits h3 { font-family: "Rubik Dirt", Impact, sans-serif; font-size: 18px; text-transform: uppercase; margin: 0; color: #fff }
 .detail-benefits p { font-size: 13px; margin: 3px 0 0; color: rgba(255,255,255,.5) }
 
 .section-title-row { display: flex; justify-content: space-between; align-items: end; margin: 26px 0 18px }
@@ -1616,7 +1615,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 20px;
   overflow: hidden;
 }
-.admin-side-art strong { font-family: "Bebas Neue"; font-size: 36px; line-height: .88; color: #fff }
+.admin-side-art strong { font-family: "Rubik Dirt", Impact, sans-serif; font-size: 36px; line-height: .88; color: #fff }
 
 .street-admin-main { padding: 36px 42px 0; position: relative; overflow: hidden }
 .street-admin-main::after {
@@ -1662,7 +1661,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   top: 54px;
   background: var(--gold-2);
   color: #000;
-  font-family: "Bebas Neue";
+  font-family: "Rubik Dirt", Impact, sans-serif;
   font-size: 26px;
   line-height: .9;
   padding: 14px 20px;
@@ -1717,7 +1716,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 18px;
 }
 .panel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px }
-.panel-head h2 { font-family: "Anton"; font-size: 24px; text-transform: uppercase; margin: 0; color: #fff }
+.panel-head h2 { font-family: "Rubik Dirt", Impact, sans-serif; font-size: 22px; text-transform: uppercase; margin: 0; color: #fff }
 .panel-head a { color: var(--gold-2); font-weight: 900; font-size: 13px }
 
 .line-chart-fake {
