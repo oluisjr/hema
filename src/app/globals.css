@@ -52,7 +52,7 @@ body::before {
 a { color: inherit; text-decoration: none }
 button, input, select, textarea { font: inherit }
 button { cursor: pointer }
-img { max-width: 100%; display: block }
+img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .container { width: min(var(--max), calc(100% - 72px)); margin-inline: auto; position: relative; z-index: 1 }
 
 /* ── STREET SHELL ─────────────────────────────────────────── */
@@ -159,8 +159,9 @@ img { max-width: 100%; display: block }
   z-index: 3;
 }
 .store-logo img {
-  width: 120px !important;
-  height: auto !important;
+  width: auto !important;
+  max-width: 110px !important;
+  height: 48px !important;
   object-fit: contain;
   filter: drop-shadow(0 0 12px rgba(212,160,23,.5));
   transition: filter .3s;
@@ -175,11 +176,12 @@ img { max-width: 100%; display: block }
   justify-content: center;
   align-items: center;
   height: 100%;
-  gap: 4px;
-  font-family: "Bangers", "Anton", Impact, sans-serif;
-  font-size: 19px;
-  letter-spacing: .16em;
+  gap: 16px;
+  font-family: "Permanent Marker", "Rubik Dirt", Impact, sans-serif;
+  font-size: 20px;
+  letter-spacing: .12em;
   text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 .store-menu a {
   position: relative;
@@ -265,7 +267,7 @@ img { max-width: 100%; display: block }
     grid-column: 1;
     grid-row: 1;
   }
-  .store-logo img { width: 96px !important }
+  .store-logo img { width: auto !important; max-width: 90px !important; height: 38px !important; margin-top: 4px; }
   .store-menu { display: none }
   .store-actions { display: none }
   .mobile-menu-btn {
@@ -845,6 +847,7 @@ img { max-width: 100%; display: block }
   letter-spacing: -.04em;
   line-height: .84;
   color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -1px -1px 0 rgba(255,255,255,0.1);
 }
 
 .hero-copy h1 { font-size: clamp(72px, 8.5vw, 148px); max-width: 740px }
@@ -1498,7 +1501,7 @@ img { max-width: 100%; display: block }
 .footer-main a:hover { color: rgba(255,255,255,.9) }
 
 .footer-brand p { font-size: 13px; line-height: 1.4; color: rgba(255,255,255,.5) }
-.footer-brand img { border-radius: 8px }
+.footer-brand img { border-radius: 8px; width: 140px !important; height: auto !important; object-fit: contain; }
 .social-row { display: flex; gap: 14px; margin-top: 12px; color: rgba(255,255,255,.5) }
 .social-row svg:hover { color: var(--gold-2) }
 
@@ -1536,10 +1539,10 @@ img { max-width: 100%; display: block }
 }
 .developer-credit .footer-credit-full {
   width: auto !important;
-  max-width: 380px !important;
-  height: 60px !important;
+  max-width: 500px !important;
+  height: 110px !important;
   object-fit: contain;
-  filter: brightness(.92) saturate(1.1);
+  filter: brightness(1.2) saturate(1.2);
 }
 
 /* ── ADMIN ────────────────────────────────────────────────── */
