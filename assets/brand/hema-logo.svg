@@ -1,0 +1,19 @@
+<svg width="460" height="160" viewBox="0 0 460 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="gold" x1="265" y1="58" x2="431" y2="121" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#E7C36D"/>
+    <stop offset=".42" stop-color="#B9822B"/>
+    <stop offset="1" stop-color="#F4D17B"/>
+  </linearGradient>
+  <filter id="soft" x="-10%" y="-20%" width="120%" height="140%" color-interpolation-filters="sRGB">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#A56F1C" flood-opacity=".18"/>
+  </filter>
+</defs>
+<path d="M52 55C100 26 152 26 205 51C237 66 272 64 306 48C343 30 382 32 421 57" stroke="#111318" stroke-width="7" stroke-linecap="round"/>
+<path d="M86 48C105 36 128 31 151 34C137 42 122 51 108 62C99 58 92 54 86 48Z" fill="#D4A241"/>
+<path d="M164 33C182 37 199 45 216 55C246 73 282 72 318 55C350 40 382 39 412 55C378 57 345 69 311 87C268 109 222 109 181 88C142 68 100 66 55 80C86 51 122 35 164 33Z" fill="#F2F2F2" stroke="#15171C" stroke-width="4"/>
+<text x="38" y="121" font-family="Arial Black, Montserrat, Arial, sans-serif" font-size="72" font-style="italic" font-weight="900" letter-spacing="-6" filter="url(#soft)">
+  <tspan fill="#15171C">He</tspan><tspan fill="url(#gold)">Ma</tspan>
+</text>
+<text x="127" y="146" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="11" fill="#6F6F72">FOOTWEAR</text>
+</svg>

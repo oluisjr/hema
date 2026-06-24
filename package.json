@@ -1,0 +1,32 @@
+{
+  "name": "hema-footwear-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo premium de sneakers com painel administrativo, WhatsApp leads e Neon Postgres.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:schema": "node scripts/print-db-help.mjs",
+    "typecheck": "tsc --noEmit",
+    "predev": "node scripts/sync-assets.mjs",
+    "prebuild": "node scripts/sync-assets.mjs"
+  },
+  "dependencies": {
+    "@google/model-viewer": "^4.0.0",
+    "@neondatabase/serverless": "^1.0.0",
+    "lucide-react": "^0.468.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.0.0",
+    "typescript": "^5.7.0"
+  }
+}
