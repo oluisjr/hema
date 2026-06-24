@@ -1,9 +1,17 @@
-/* ── TYPOGRAPHY SYSTEM ─────────────────────────────────────
-   Rubik Dirt       → ALL headings / titles (chunky, graffiti, street)
-   Barlow Condensed → Navbar / labels / eyebrows / CTAs
-   DM Sans          → Body copy / UI text (clean, readable on mobile)
-──────────────────────────────────────────────────────────── */
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Barlow+Condensed:wght@400;600;700;900&family=DM+Sans:wght@400;500;600;700&display=swap");
+﻿/* â”€â”€ TYPOGRAPHY SYSTEM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Souvenir         â†’ ALL headings / titles (classic, distinctive, street-premium)
+   Barlow Condensed â†’ Navbar / labels / eyebrows / CTAs
+   DM Sans          â†’ Body copy / UI text (clean, readable on mobile)
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Souvenir";
+  src: url("/fonts/SOUVENIR.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --ink: #0a0a0c;
@@ -60,7 +68,7 @@ button { cursor: pointer }
 img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .container { width: min(var(--max), calc(100% - 72px)); margin-inline: auto; position: relative; z-index: 1 }
 
-/* ── STREET SHELL ─────────────────────────────────────────── */
+/* â”€â”€ STREET SHELL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .street-shell {
   min-height: 100vh;
   overflow: hidden;
@@ -82,10 +90,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   z-index: 0;
 }
 
-/* ── NAV ─────────────────────────────────────────────────────
-   Concept: Tag wall — no boxy rectangle, diagonal gold cut,
+/* â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Concept: Tag wall â€” no boxy rectangle, diagonal gold cut,
    spray-paint line at bottom, Rubik Dirt street font on links
-──────────────────────────────────────────────────────────── */
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .store-nav {
   width: 100%;
   height: 86px;
@@ -114,7 +122,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   pointer-events: none;
 }
 
-/* ── LOGO ZONE — angular cut right edge ─── */
+/* â”€â”€ LOGO ZONE â€” angular cut right edge â”€â”€â”€ */
 .store-logo-zone {
   display: flex;
   align-items: center;
@@ -164,7 +172,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .store-logo:hover img { filter: grayscale(0%) drop-shadow(0 0 15px rgba(212,160,23,.6)); transform: scale(1.03); }
 
-/* ── MENU LINKS — centered, Rubik Dirt street style ─── */
+/* â”€â”€ MENU LINKS â€” centered, Rubik Dirt street style â”€â”€â”€ */
 .store-menu {
   flex: 1;
   display: flex;
@@ -210,7 +218,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   transform: scaleX(1);
 }
 
-/* ── ACTIONS (bag) ─── */
+/* â”€â”€ ACTIONS (bag) â”€â”€â”€ */
 .store-actions {
   display: flex;
   align-items: center;
@@ -238,7 +246,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   place-items: center;
 }
 
-/* ── MOBILE HAMBURGER — hidden desktop ─── */
+/* â”€â”€ MOBILE HAMBURGER â€” hidden desktop â”€â”€â”€ */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -251,7 +259,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   flex-shrink: 0;
 }
 
-/* ── MOBILE RESPONSIVE ─── */
+/* â”€â”€ MOBILE RESPONSIVE â”€â”€â”€ */
 @media (max-width: 768px) {
   .store-nav {
     height: 60px;
@@ -275,7 +283,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   }
 }
 
-/* ── MOBILE DRAWER ─── */
+/* â”€â”€ MOBILE DRAWER â”€â”€â”€ */
 .mobile-drawer-overlay {
   display: none;
   position: fixed;
@@ -329,7 +337,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .mobile-drawer-close:hover { color: var(--gold-2) }
 
-/* drawer links — BIG graffiti letters */
+/* drawer links â€” BIG graffiti letters */
 .mobile-drawer nav {
   display: flex;
   flex-direction: column;
@@ -358,7 +366,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 /* gold spray dot indicator */
 .mobile-drawer nav a.active::after {
-  content: "●";
+  content: "â—";
   margin-left: auto;
   font-size: 8px;
   color: var(--gold-2);
@@ -391,7 +399,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 
 
 
-/* ── INSTITUTIONAL PAGES ──────────────────────────────────── */
+/* â”€â”€ INSTITUTIONAL PAGES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .inst-page { min-height: 80vh; padding: 60px 0 80px }
 .inst-page .page-eyebrow {
   font-family: "Barlow Condensed", sans-serif;
@@ -404,7 +412,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   display: block;
 }
 .inst-page h1 {
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-size: clamp(48px, 7vw, 100px);
   line-height: .88;
   text-transform: uppercase;
@@ -415,7 +423,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .inst-page h1 span { color: var(--gold-2) }
 .inst-page h2 {
-  font-family: "Rubik Dirt", sans-serif;
+  font-family: "Souvenir", sans-serif;
   font-size: 26px;
   font-weight: 400;
   letter-spacing: .04em;
@@ -457,7 +465,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin-bottom: 12px;
 }
 .inst-card h3 {
-  font-family: "Rubik Dirt", sans-serif;
+  font-family: "Souvenir", sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: .02em;
@@ -476,7 +484,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 22px 0;
 }
 .faq-item summary {
-  font-family: "Rubik Dirt", sans-serif;
+  font-family: "Souvenir", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: .02em;
@@ -490,7 +498,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   gap: 16px;
 }
 .faq-item summary::after { content: "+"; color: var(--gold-2); font-size: 24px }
-.faq-item[open] summary::after { content: "−" }
+.faq-item[open] summary::after { content: "âˆ’" }
 .faq-item p { margin: 14px 0 4px }
 .contact-grid {
   display: grid;
@@ -509,7 +517,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .contact-card-icon { font-size: 36px }
 .contact-card h3 {
-  font-family: "Rubik Dirt", sans-serif;
+  font-family: "Souvenir", sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: .02em;
@@ -536,7 +544,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   .inst-card-grid, .contact-grid { grid-template-columns: 1fr }
 }
 
-/* ── INST-PAGE EXTRA COMPONENTS ───────────────────────────── */
+/* â”€â”€ INST-PAGE EXTRA COMPONENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 /* lead paragraph */
 .inst-lead {
@@ -573,7 +581,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   line-height: 1;
 }
 .inst-card h2 {
-  font-family: "Rubik Dirt", sans-serif;
+  font-family: "Souvenir", sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: .02em;
@@ -598,7 +606,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin: 40px 0;
 }
 .inst-highlight blockquote {
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-size: clamp(20px, 3.5vw, 28px);
   letter-spacing: .01em;
   text-transform: uppercase;
@@ -640,7 +648,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .inst-step:last-child { border-bottom: none }
 .inst-step-num {
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-size: 34px;
   color: var(--gold-2);
   line-height: 1;
@@ -653,7 +661,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 4px 0;
 }
 .inst-step h2 {
-  font-family: "Rubik Dirt", sans-serif;
+  font-family: "Souvenir", sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: .02em;
@@ -683,7 +691,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   color: rgba(255,255,255,.65);
 }
 .inst-list li::before {
-  content: "▸";
+  content: "â–¸";
   position: absolute;
   left: 0;
   color: var(--gold-2);
@@ -775,7 +783,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   background: rgba(37,211,102,.04);
 }
 .contato-card h2 {
-  font-family: "Rubik Dirt", sans-serif;
+  font-family: "Souvenir", sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: .02em;
@@ -802,7 +810,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   gap: 16px;
 }
 
-/* ── INST-PAGE MOBILE ─────────────────────────────────────── */
+/* â”€â”€ INST-PAGE MOBILE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
   .inst-page { padding: 40px 0 60px }
   .inst-grid { grid-template-columns: 1fr }
@@ -817,7 +825,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 
 
-/* ── HERO ─────────────────────────────────────────────────── */
+/* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .street-hero {
   position: relative;
   display: grid;
@@ -845,14 +853,14 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin-bottom: 6px;
 }
 
-/* RUBIK DIRT — unified title treatment for ALL headings */
+/* RUBIK DIRT â€” unified title treatment for ALL headings */
 .hero-copy h1,
 .catalog-copy h1,
 .product-buy-panel h1,
 .product-edit-header h1,
 .dashboard-header h1 {
   margin: 10px 0 16px;
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.01em;
@@ -953,7 +961,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .benefit-strip svg { color: var(--gold-2); flex-shrink: 0 }
 
-/* ── HERO ART ─────────────────────────────────────────────── */
+/* â”€â”€ HERO ART â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero-art, .catalog-art {
   min-height: 530px;
   position: relative;
@@ -1013,7 +1021,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   bottom: 18%;
   z-index: 3;
   color: var(--gold-2);
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   text-transform: uppercase;
   font-size: 62px;
   line-height: .8;
@@ -1067,7 +1075,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .social-rail span { writing-mode: vertical-rl; transform: rotate(180deg); margin-bottom: 6px }
 .social-rail b { font-size: 22px; color: rgba(255,255,255,.45) }
 
-/* ── SECTIONS / PRODUCTS ──────────────────────────────────── */
+/* â”€â”€ SECTIONS / PRODUCTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .weekly-section {
   display: grid;
   grid-template-columns: 268px 1fr;
@@ -1084,7 +1092,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 
 .weekly-title h2, .section-title-row h2 {
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-weight: 400;
   font-size: 58px;
   line-height: .88;
@@ -1121,7 +1129,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .weekly-products { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px }
 .catalog-grid, .related-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px }
 
-/* ── PRODUCT CARDS ────────────────────────────────────────── */
+/* â”€â”€ PRODUCT CARDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .street-product-card {
   position: relative;
   min-height: 290px;
@@ -1236,7 +1244,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   border-color: rgba(255,255,255,.35);
 }
 
-/* ── IMMERSIVE BANNER ─────────────────────────────────────── */
+/* â”€â”€ IMMERSIVE BANNER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .immersive-banner {
   min-height: 148px;
   margin-top: 36px;
@@ -1270,7 +1278,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   letter-spacing: .14em;
 }
 .immersive-banner h2 {
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   margin: 4px 0 0;
@@ -1280,7 +1288,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .immersive-banner img { max-height: 138px; object-fit: contain; filter: drop-shadow(0 18px 26px rgba(0,0,0,.65)) }
 .gold-cta { height: 56px; border-radius: 4px }
 
-/* ── CATALOG PAGE ─────────────────────────────────────────── */
+/* â”€â”€ CATALOG PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .catalog-stage {
   position: relative;
   display: grid;
@@ -1317,7 +1325,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .clear-filters { text-transform: uppercase; justify-content: center; font-size: 12px; font-weight: 900 }
 .result-count { font-size: 13px; font-weight: 900; margin: 14px 0; color: rgba(255,255,255,.65) }
 
-/* ── PRODUCT PAGE ─────────────────────────────────────────── */
+/* â”€â”€ PRODUCT PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .breadcrumbs { margin: 36px 0 24px; color: rgba(255,255,255,.45); font-weight: 700; font-size: 13px }
 .breadcrumbs span { margin: 0 12px; color: rgba(255,255,255,.8) }
 
@@ -1375,7 +1383,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   z-index: 5;
   background: var(--gold-2);
   color: #000;
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-size: 28px;
   text-transform: uppercase;
   padding: 10px 18px;
@@ -1469,13 +1477,13 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .detail-benefits article:last-child { border-right: 0 }
 .detail-benefits svg { color: var(--gold-2); flex: 0 0 auto }
-.detail-benefits h3 { font-family: "Rubik Dirt", Impact, sans-serif; font-size: 18px; text-transform: uppercase; margin: 0; color: #fff }
+.detail-benefits h3 { font-family: "Souvenir", Impact, sans-serif; font-size: 18px; text-transform: uppercase; margin: 0; color: #fff }
 .detail-benefits p { font-size: 13px; margin: 3px 0 0; color: rgba(255,255,255,.5) }
 
 .section-title-row { display: flex; justify-content: space-between; align-items: end; margin: 26px 0 18px }
 .related-grid { grid-template-columns: repeat(4, 1fr) }
 
-/* ── FOOTER ───────────────────────────────────────────────── */
+/* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .street-footer {
   margin-top: 32px;
   padding: 32px 0 0;
@@ -1534,7 +1542,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   color: rgba(255,255,255,.7);
 }
 
-/* Footer credit — single image */
+/* Footer credit â€” single image */
 .developer-credit {
   margin: 28px auto 0;
   padding: 16px 24px;
@@ -1552,7 +1560,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   filter: brightness(1.2) saturate(1.2);
 }
 
-/* ── ADMIN ────────────────────────────────────────────────── */
+/* â”€â”€ ADMIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .street-admin-shell {
   min-height: 100vh;
   display: grid;
@@ -1615,7 +1623,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 20px;
   overflow: hidden;
 }
-.admin-side-art strong { font-family: "Rubik Dirt", Impact, sans-serif; font-size: 36px; line-height: .88; color: #fff }
+.admin-side-art strong { font-family: "Souvenir", Impact, sans-serif; font-size: 36px; line-height: .88; color: #fff }
 
 .street-admin-main { padding: 36px 42px 0; position: relative; overflow: hidden }
 .street-admin-main::after {
@@ -1661,7 +1669,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   top: 54px;
   background: var(--gold-2);
   color: #000;
-  font-family: "Rubik Dirt", Impact, sans-serif;
+  font-family: "Souvenir", Impact, sans-serif;
   font-size: 26px;
   line-height: .9;
   padding: 14px 20px;
@@ -1716,7 +1724,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 18px;
 }
 .panel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px }
-.panel-head h2 { font-family: "Rubik Dirt", Impact, sans-serif; font-size: 22px; text-transform: uppercase; margin: 0; color: #fff }
+.panel-head h2 { font-family: "Souvenir", Impact, sans-serif; font-size: 22px; text-transform: uppercase; margin: 0; color: #fff }
 .panel-head a { color: var(--gold-2); font-weight: 900; font-size: 13px }
 
 .line-chart-fake {
@@ -1787,7 +1795,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.16), 0 6px 16px rgba(0,0,0,.28);
 }
 
-/* ── ADMIN FORM ───────────────────────────────────────────── */
+/* â”€â”€ ADMIN FORM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .street-admin-topbar {
   height: 58px;
   margin: -36px -42px 30px;
@@ -1948,7 +1956,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .publish-admin { background: linear-gradient(135deg, var(--gold-2), var(--gold-3)); color: #000; border: 0 !important }
 .ghost-admin { background: rgba(255,255,255,.06) }
 
-/* ── LOGIN ────────────────────────────────────────────────── */
+/* â”€â”€ LOGIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-shell { min-height: 100vh }
 .nav { display: none }
 .footer { display: none }
@@ -1984,7 +1992,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin-top: 10px;
 }
 
-/* ── RESPONSIVE ───────────────────────────────────────────── */
+/* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1200px) {
   .container { width: calc(100% - 32px) }
   .street-hero, .catalog-stage, .product-hero-layout { grid-template-columns: 1fr }
@@ -2025,3 +2033,4 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   .form-grid-v2 label:nth-child(1), .form-grid-v2 label:nth-child(8) { grid-column: auto }
   .developer-credit .footer-credit-full { max-width: 280px !important }
 }
+
