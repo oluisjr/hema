@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Permanent+Marker&family=Rubik+Dirt&family=Sedgwick+Ave+Display&family=Inter:wght@400;500;600;700;800;900&display=swap");
+/* ── TYPOGRAPHY SYSTEM ─────────────────────────────────────
+   Black Ops One  → Hero titles / big statements (bold, military)
+   Barlow Condensed → Navbar / labels / eyebrows (compact, athletic)
+   Oswald          → Card headings / prices / section labels
+   DM Sans         → Body copy / UI text (clean, readable mobile)
+──────────────────────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Barlow+Condensed:wght@400;600;700;900&family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 
 :root {
   --ink: #0a0a0c;
@@ -31,8 +37,8 @@ body {
   background:
     linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)),
     url("/hema-street-ui-v2-assets/background/brick-wall-bg.png") center/cover fixed;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  letter-spacing: -.018em;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.01em;
   min-height: 100vh;
 }
 
@@ -169,12 +175,13 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   gap: 32px;
 }
 .store-menu a {
-  font-family: "Bebas Neue", "Anton", sans-serif;
-  font-size: 24px;
-  letter-spacing: .08em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .12em;
   text-transform: uppercase;
-  color: #fff;
-  transition: transform .2s, color .2s, text-shadow .2s;
+  color: rgba(255,255,255,.85);
+  transition: transform .2s, color .2s;
   display: flex;
   align-items: center;
   height: 100%;
@@ -182,8 +189,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .store-menu a:hover {
   transform: translateY(-2px);
-  color: var(--gold-2);
-  text-shadow: 0 5px 15px rgba(212,160,23,.4);
+  color: #fff;
 }
 .store-menu a.active {
   color: var(--gold-2);
@@ -194,7 +200,7 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   left: 0;
   right: 0;
   bottom: 24px;
-  height: 3px;
+  height: 2px;
   background: var(--gold-2);
   transform: scaleX(0);
   transform-origin: center;
@@ -332,9 +338,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   flex: 1;
 }
 .mobile-drawer nav a {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 28px;
-  letter-spacing: .18em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: .15em;
   text-transform: uppercase;
   color: rgba(255,255,255,.82);
   padding: 13px 24px;
@@ -368,9 +375,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   text-align: center;
   background: linear-gradient(120deg, var(--gold-3) 0%, var(--gold-2) 60%, var(--gold-3) 100%);
   color: #000;
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 22px;
-  letter-spacing: .12em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: .14em;
   padding: 14px 20px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -387,28 +395,31 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 /* ── INSTITUTIONAL PAGES ──────────────────────────────────── */
 .inst-page { min-height: 80vh; padding: 60px 0 80px }
 .inst-page .page-eyebrow {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 14px;
-  letter-spacing: .3em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .34em;
   text-transform: uppercase;
   color: var(--gold-2);
   margin-bottom: 12px;
   display: block;
 }
 .inst-page h1 {
-  font-family: "Anton", Impact, sans-serif;
+  font-family: "Black Ops One", Impact, sans-serif;
   font-size: clamp(48px, 7vw, 100px);
   line-height: .88;
   text-transform: uppercase;
-  letter-spacing: -.04em;
+  letter-spacing: 0.01em;
   color: #fff;
   margin: 0 0 28px;
+  text-shadow: 3px 3px 0 rgba(0,0,0,.8);
 }
 .inst-page h1 span { color: var(--gold-2) }
 .inst-page h2 {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 28px;
-  letter-spacing: .14em;
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--gold-2);
   margin: 40px 0 12px;
@@ -447,9 +458,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin-bottom: 12px;
 }
 .inst-card h3 {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 22px;
-  letter-spacing: .12em;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 8px;
@@ -465,9 +477,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 22px 0;
 }
 .faq-item summary {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 20px;
-  letter-spacing: .10em;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .05em;
   text-transform: uppercase;
   cursor: pointer;
   color: #fff;
@@ -497,9 +510,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .contact-card-icon { font-size: 36px }
 .contact-card h3 {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 22px;
-  letter-spacing: .12em;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--gold-2);
   margin: 0;
@@ -560,9 +574,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   line-height: 1;
 }
 .inst-card h2 {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 22px;
-  letter-spacing: .13em;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 8px;
@@ -584,9 +599,9 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   margin: 40px 0;
 }
 .inst-highlight blockquote {
-  font-family: "Anton", Impact, sans-serif;
-  font-size: clamp(20px, 3.5vw, 30px);
-  letter-spacing: -.02em;
+  font-family: "Black Ops One", Impact, sans-serif;
+  font-size: clamp(20px, 3.5vw, 28px);
+  letter-spacing: .01em;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 6px;
@@ -626,8 +641,8 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 }
 .inst-step:last-child { border-bottom: none }
 .inst-step-num {
-  font-family: "Anton", Impact, sans-serif;
-  font-size: 36px;
+  font-family: "Black Ops One", Impact, sans-serif;
+  font-size: 34px;
   color: var(--gold-2);
   line-height: 1;
   min-width: 54px;
@@ -639,9 +654,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   padding: 4px 0;
 }
 .inst-step h2 {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 22px;
-  letter-spacing: .12em;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 6px;
@@ -689,13 +705,13 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
 .inst-table th {
   background: rgba(212,160,23,.12);
   color: var(--gold-2);
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 17px;
-  letter-spacing: .13em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .14em;
   text-transform: uppercase;
   padding: 14px 20px;
   text-align: left;
-  font-weight: 400;
   border-bottom: 1px solid rgba(212,160,23,.20);
 }
 .inst-table td {
@@ -720,9 +736,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   gap: 8px;
   background: linear-gradient(120deg, var(--gold-3), var(--gold-2) 60%, var(--gold-3));
   color: #000;
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 20px;
-  letter-spacing: .12em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .14em;
   text-transform: uppercase;
   padding: 14px 30px;
   border-radius: 4px;
@@ -759,9 +776,10 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   background: rgba(37,211,102,.04);
 }
 .contato-card h2 {
-  font-family: "Bangers", Impact, sans-serif;
-  font-size: 24px;
-  letter-spacing: .13em;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .06em;
   text-transform: uppercase;
   color: #fff;
   margin: 0;
@@ -820,21 +838,22 @@ img { max-width: 100%; height: auto; object-fit: contain; display: block }
   background: linear-gradient(90deg, rgba(212,160,23,.95), rgba(212,160,23,.55), transparent);
   color: #000;
   text-transform: uppercase;
-  letter-spacing: .28em;
-  font-size: 12px;
+  letter-spacing: .30em;
+  font-size: 11px;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 900;
   transform: rotate(-1.4deg);
   margin-bottom: 6px;
 }
 
-/* BRUTALIST STREET TITLE TREATMENT */
+/* BLACK OPS TITLE TREATMENT */
 .hero-copy h1,
 .catalog-copy h1,
 .product-buy-panel h1,
 .product-edit-header h1,
 .dashboard-header h1 {
   margin: 10px 0 16px;
-  font-family: "Bebas Neue", Impact, sans-serif;
+  font-family: "Black Ops One", Impact, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.02em;
