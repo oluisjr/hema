@@ -89,14 +89,14 @@ export async function getProducts(options?: {
     order by featured desc, created_at desc
   `;
 
-  return rows.map(mapProduct);
+  return (rows as Record<string, unknown>[]).map(mapProduct);
 }
 
 export async function getProductBySlug(slug: string): Promise<Product | null> {
   const sql = getClient();
   if (!sql) return demoProducts.find((p) => p.slug === slug) ?? null;
 
-  const rows = await sql`select * from products where slug = ${slug} limit 1`;
+  const rows = await sql`select * from products where slug = ${slug} limit 1` as Record<string, unknown>[];
   return rows[0] ? mapProduct(rows[0]) : null;
 }
 
@@ -104,7 +104,7 @@ export async function getProductById(id: string): Promise<Product | null> {
   const sql = getClient();
   if (!sql) return demoProducts.find((p) => p.id === id) ?? null;
 
-  const rows = await sql`select * from products where id = ${id} limit 1`;
+  const rows = await sql`select * from products where id = ${id} limit 1` as Record<string, unknown>[];
   return rows[0] ? mapProduct(rows[0]) : null;
 }
 
@@ -127,7 +127,7 @@ export async function getAdminStats(): Promise<StoreStats> {
       (select count(*)::int from leads) as leads
   `;
 
-  const row = rows[0];
+  const row = (rows as Record<string, unknown>[])[0];
   return {
     totalProducts: Number(row.total_products),
     productsWith3d: Number(row.products_with_3d),
@@ -185,7 +185,7 @@ export async function upsertProduct(input: ProductInput, id?: string) {
     )
     returning id
   `;
-  return String(rows[0].id);
+  return String((rows as Record<string, unknown>[])[0].id);
 }
 
 export async function deleteProduct(id: string) {
@@ -208,7 +208,7 @@ export async function getLeads(): Promise<Lead[]> {
     order by leads.created_at desc
     limit 100
   `;
-  return rows.map(mapLead);
+  return (rows as Record<string, unknown>[]).map(mapLead);
 }
 
 export async function createLead(input: { productId?: string | null; message?: string; source?: string }) {

@@ -5,7 +5,6 @@ import { StoreNav } from "@/components/store/StoreNav";
 import { ProductCard } from "@/components/store/ProductCard";
 import { Footer } from "@/components/store/Footer";
 import { WhatsAppLeadButton } from "@/components/store/WhatsAppLeadButton";
-import { ProductModelViewer } from "@/components/store/ProductModelViewer";
 import { getProducts } from "@/lib/db";
 import { currencyFromCents } from "@/lib/format";
 
@@ -68,22 +67,6 @@ export default async function HomePage() {
           <div className="weekly-products">
             {products.map((product) => <ProductCard key={product.id} product={product} compact />)}
           </div>
-        </section>
-
-        <section className="container immersive-banner">
-          <div>
-            <span>Experiência imersiva</span>
-            <h2>Veja. Gire. Sinta.</h2>
-            <p>Explore nossos sneakers em 360° e descubra cada detalhe como se estivesse com eles nas mãos.</p>
-          </div>
-          <div style={{ width: "100%", maxWidth: 400, height: 300, position: "relative", margin: "0 auto" }}>
-            <ProductModelViewer 
-              src="https://modelviewer.dev/shared-assets/models/Shoe.glb" 
-              poster="/hema-street-ui-v2-assets/studio/asset-360-vitrine-tenis.png" 
-              alt="Visualização 3D Sneaker" 
-            />
-          </div>
-          <Link href="/catalogo" className="gold-cta">Explorar em 3D ⬡</Link>
         </section>
       </main>
 
